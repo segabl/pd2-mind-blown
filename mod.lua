@@ -61,7 +61,7 @@ if RequiredScript == "lib/managers/player/snipergrazedamage" then
               damage = percentage * hit.damage,
               attacker_unit = player_unit,
               pos = hit_pos,
-              attack_dir = hit.position - hit_pos
+              attack_dir = hit_pos - hit.position
             })
           end
         end
