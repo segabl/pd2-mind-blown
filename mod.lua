@@ -2,7 +2,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitMindBlown",
 
   loc:add_localized_strings({
     menu_sniper_graze_damage = "Mind Blown",
-    menu_sniper_graze_damage_desc = "BASIC: ##4 points##\nScoring a headshot with a Sniper Rifle deals ##50%## of the damage to the closest enemy in a ##5m## radius.\n\nThe effect propagates up to ##4## times, with subsequent damage equaling the damage of the previous hit.\n\nACE: ##8 points##\nAny killing headshot deals ##100%## of the damage to the closest enemy in the effect radius.\n\nThe effect can now propagate up to ##8## times."
+    menu_sniper_graze_damage_desc = "BASIC: ##4 points##\nScoring a headshot with a Sniper Rifle deals ##50%## of the damage to the closest enemy in a ##4m## radius.\n\nThe effect chains up to ##4## times, with subsequent damage equaling the damage of the previous hit.\n\nACE: ##8 points##\nAny killing headshot deals ##100%## of the damage to the closest enemy in the effect radius.\n\nThe effect can now chain up to ##8## times."
   })
 
 end)
@@ -129,13 +129,13 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
     
     self.values.snp.graze_damage = {
       {
-        radius = 500,
+        radius = 400,
         times = 4,
         damage_factor = 0.5,
         damage_factor_kill = 0.5
       },
       {
-        radius = 500,
+        radius = 400,
         times = 8,
         damage_factor = 0.5,
         damage_factor_kill = 1
