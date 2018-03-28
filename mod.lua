@@ -93,7 +93,7 @@ if RequiredScript == "lib/managers/player/snipergrazedamage" then
 
       hit_enemies[closest:key()] = data
 
-      DelayedCalls:Add("grazehit" .. tostring(closest), 0.1, function ()
+      DelayedCalls:Add("grazehit" .. tostring(closest), 0.05, function ()
         if not alive(closest) or not alive(player_unit) then
           return
         end
