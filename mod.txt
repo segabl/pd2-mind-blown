@@ -1,6 +1,6 @@
 {
   "name" : "Mind Blown",
-  "description" : "Changes Graze to a spherical AOE with damage falloff",
+  "description" : "Changes Graze to a chaining effect",
   "author" : "Shiny Hoppip",
   "blt_version" : 2,
   "color" : "0.043 0.808 0.6",
