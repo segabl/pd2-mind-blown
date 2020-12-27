@@ -1,13 +1,13 @@
 {
-  "name" : "Mind Blown",
-  "description" : "Changes Graze to a chaining effect",
-  "author" : "Shiny Hoppip",
-  "blt_version" : 2,
-  "color" : "0.043 0.808 0.6",
-  "image" : "mod.png",
-  "version" : "1.1",
-  "hooks" : [
-    { "hook_id" : "lib/managers/player/snipergrazedamage", "script_path" : "mod.lua" },
-    { "hook_id" : "lib/tweak_data/upgradestweakdata", "script_path" : "mod.lua" }
-  ]
+	"name" : "Mind Blown",
+	"description" : "Changes Graze to a chaining effect",
+	"author" : "Hoppip",
+	"blt_version" : 2,
+	"color" : "0.043 0.808 0.6",
+	"image" : "mod.png",
+	"version" : "1.2",
+	"hooks" : [
+		{ "hook_id" : "lib/managers/player/snipergrazedamage", "script_path" : "mod.lua" },
+		{ "hook_id" : "lib/tweak_data/upgradestweakdata", "script_path" : "mod.lua" }
+	]
 }
