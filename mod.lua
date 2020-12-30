@@ -2,7 +2,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitMindBlown",
 
 	loc:add_localized_strings({
 		menu_sniper_graze_damage = "Mind Blown",
-		menu_sniper_graze_damage_desc = "BASIC: ##4 points##\nScoring a headshot with a Sniper Rifle deals ##50%## of the damage to the closest enemy in a ##4m## radius, chaining up to ##4## times.\n\nACE: ##8 points##\nAny killing headshot with a Sniper Rifle now deals ##100%## of the damage to the closest enemy and the effect can now chain up to ##8## times."
+		menu_sniper_graze_damage_desc = "BASIC: ##$basic##\nScoring a headshot with a Sniper Rifle deals ##35%## of the damage to the closest enemy in a ##4m## radius, chaining up to ##4## times.\n\nACE: ##$pro##\nAny killing headshot with a Sniper Rifle now deals ##100%## of the damage to enemies in the chain and the effect can now chain up to ##8## times."
 	})
 
 end)
@@ -121,13 +121,13 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 			{
 				radius = 400,
 				times = 4,
-				damage_factor = 0.5,
-				damage_factor_kill = 0.5
+				damage_factor = 0.35,
+				damage_factor_kill = 0.35
 			},
 			{
 				radius = 400,
 				times = 8,
-				damage_factor = 0.5,
+				damage_factor = 0.35,
 				damage_factor_kill = 1
 			}
 		}
