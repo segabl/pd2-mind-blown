@@ -6,8 +6,13 @@
 	"blt_version" : 2,
 	"color" : "0.043 0.808 0.6",
 	"image" : "mod.png",
-	"version" : "1.3",
+	"version" : "1.4",
+	"updates" : [{
+		"identifier" : "pd2-mind-blown",
+		"host": { "meta": "https://updates.hoppip.at/pd2-mind-blown" }
+	}],
 	"hooks" : [
+		{ "hook_id" : "lib/managers/menumanager", "script_path" : "mod.lua" },
 		{ "hook_id" : "lib/managers/player/snipergrazedamage", "script_path" : "mod.lua" },
 		{ "hook_id" : "lib/tweak_data/upgradestweakdata", "script_path" : "mod.lua" }
 	]
