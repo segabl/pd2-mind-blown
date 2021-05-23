@@ -4,7 +4,7 @@ if RequiredScript == "lib/managers/menumanager" then
 
 		loc:add_localized_strings({
 			menu_sniper_graze_damage = "Mind Blown",
-			menu_sniper_graze_damage_desc = "BASIC: ##$basic##\nScoring a headshot with a Sniper Rifle deals ##35%## of the damage to the closest enemy in a ##4m## radius, chaining up to ##4## times.\n\nACE: ##$pro##\nAny killing headshot with a Sniper Rifle now deals ##100%## of the damage to enemies in the chain and the effect can now chain up to ##8## times."
+			menu_sniper_graze_damage_desc = "BASIC: ##$basic##\nScoring a headshot with a Sniper Rifle deals ##35%## of the damage to the closest enemy in a ##4m## radius, chaining up to ##3## times.\n\nACE: ##$pro##\nAny killing headshot with a Sniper Rifle now deals ##100%## of the damage to enemies in the chain and the effect can now chain up to ##6## times."
 		})
 
 	end)
@@ -33,7 +33,7 @@ elseif RequiredScript == "lib/managers/player/snipergrazedamage" then
 		local sentry_mask = managers.slot:get_mask("sentry_gun")
 		local ally_mask = managers.slot:get_mask("all_criminals")
 		local enemy_mask = managers.slot:get_mask("enemies")
-		local geometry_mask = managers.slot:get_mask("world_geometry")
+		local geometry_mask = managers.slot:get_mask("bullet_blank_impact_targets")
 		local hit_enemies = {}
 		local ignored_enemies = {}
 
@@ -125,13 +125,13 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.snp.graze_damage = {
 			{
 				radius = 400,
-				times = 4,
+				times = 3,
 				damage_factor = 0.35,
 				damage_factor_kill = 0.35
 			},
 			{
 				radius = 400,
-				times = 8,
+				times = 6,
 				damage_factor = 0.35,
 				damage_factor_kill = 1
 			}
